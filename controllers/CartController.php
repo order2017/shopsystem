@@ -13,9 +13,9 @@ use yii\web\Controller;
 
 class CartController extends Controller
 {
-    public $layout=false;
 
     public function actionIndex(){
+        $this->layout = 'layouts1';
         return $this->render('index');
     }
 

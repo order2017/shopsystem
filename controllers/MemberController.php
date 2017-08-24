@@ -13,13 +13,14 @@ use yii\web\Controller;
 
 class MemberController extends Controller
 {
-    public $layout =false;
 
     public function actionIndedx(){
+        $this->layout = false;
         return $this->render('index');
     }
 
     public function actionAuth(){
+        $this->layout = 'layouts2';
         return $this->render('auth');
     }
 

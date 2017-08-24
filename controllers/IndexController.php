@@ -12,9 +12,8 @@ use yii\web\Controller;
 
 class IndexController extends Controller
 {
-    public $layout=false;
-
     public function actionIndex(){
+        $this->layout = "layouts1";
         return $this->render('index');
     }
 }
