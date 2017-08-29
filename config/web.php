@@ -66,6 +66,11 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
+
+    // 开启配置后台模块，这样就可以访问后台模块
+    $config['modules']['admin'] = [
+        'class' => 'app\modules\admin',
+    ];
 }
 
 return $config;
